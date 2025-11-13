@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历作品集</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">关于我</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">简历</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">作品集</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">联系我</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区域 -->
+    <main>
+        <!-- 首页/个人信息 -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="name">张三</span>
+                            <span class="title">全栈开发工程师</span>
+                        </h1>
+                        <p class="hero-description">
+                            热爱技术创新，专注于用户体验优化，具备丰富的前后端开发经验。
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-primary">查看作品</a>
+                            <a href="#contact" class="btn btn-secondary">联系我</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-image">
+                            <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20developer%20avatar%20portrait%2C%20modern%20minimalist%20style%2C%20clean%20background%2C%20confident%20expression&image_size=square" alt="个人头像">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我 -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>我是一名充满激情的全栈开发工程师，拥有5年的开发经验。专注于构建高性能、用户友好的Web应用程序。</p>
+                        <p>我热爱学习新技术，善于解决复杂的技术问题，并且具有良好的团队协作能力。</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">完成项目</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5年</span>
+                                <span class="stat-label">开发经验</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">技术栈</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 简历区域 -->
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <h2 class="section-title">我的简历</h2>
+                
+                <!-- 技能展示 -->
+                <div class="skills-section">
+                    <h3 class="subsection-title">技能专长</h3>
+                    <div class="skills-container" id="skills-container">
+                        <!-- 技能将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+
+                <!-- 教育背景 -->
+                <div class="education-section">
+                    <h3 class="subsection-title">教育背景</h3>
+                    <div class="timeline" id="education-timeline">
+                        <!-- 教育经历将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+
+                <!-- 工作经历 -->
+                <div class="experience-section">
+                    <h3 class="subsection-title">工作经历</h3>
+                    <div class="timeline" id="experience-timeline">
+                        <!-- 工作经历将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+
+                <!-- 项目经验 -->
+                <div class="projects-section">
+                    <h3 class="subsection-title">项目经验</h3>
+                    <div class="projects-grid" id="projects-grid">
+                        <!-- 项目卡片将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品集 -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">作品集</h2>
+                
+                <!-- 作品分类筛选 -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="web">Web开发</button>
+                    <button class="filter-btn" data-filter="mobile">移动应用</button>
+                    <button class="filter-btn" data-filter="design">UI设计</button>
+                    <button class="filter-btn" data-filter="other">其他</button>
+                </div>
+
+                <!-- 作品展示 -->
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- 作品卡片将通过JavaScript动态生成 -->
+                </div>
+
+                <!-- 图片画廊模态框 -->
+                <div class="gallery-modal" id="gallery-modal">
+                    <div class="gallery-content">
+                        <span class="gallery-close">&times;</span>
+                        <div class="gallery-container">
+                            <img class="gallery-image" id="gallery-image" src="" alt="">
+                            <div class="gallery-nav">
+                                <button class="gallery-prev" id="gallery-prev">&lt;</button>
+                                <button class="gallery-next" id="gallery-next">&gt;</button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title" id="gallery-title"></h3>
+                            <p class="gallery-description" id="gallery-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">联系我</h2>
+                
+                <div class="contact-content">
+                    <!-- 联系信息 -->
+                    <div class="contact-info">
+                        <h3 class="subsection-title">联系信息</h3>
+                        <div class="contact-methods" id="contact-methods">
+                            <!-- 联系方式将通过JavaScript动态生成 -->
+                        </div>
+                    </div>
+
+                    <!-- 联系表单 -->
+                    <div class="contact-form">
+                        <h3 class="subsection-title">发送消息</h3>
+                        <form id="contact-form" class="form">
+                            <div class="form-group">
+                                <label for="name">姓名</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">邮箱</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">主题</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <span class="error-message" id="subject-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">消息</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">发送消息</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 个人简历作品集. 保留所有权利.</p>
+                <div class="social-links" id="social-links">
+                    <!-- 社交媒体链接将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/resume.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

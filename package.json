@@ -1,0 +1,25 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Personal resume portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "python3 -m http.server $PORT || 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "personal-website",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
